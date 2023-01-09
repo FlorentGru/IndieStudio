@@ -53,13 +53,13 @@ Win::Win(irr::IrrlichtDevice *device, MyEventReceiver &receiver, Map::character_
     winner_texture = this->_driver->getTexture("./assets/meshs/Menu/winner.png");
     draw_texture = this->_driver->getTexture("./assets/meshs/Menu/draw.png");
     quit_texture = this->_driver->getTexture("./assets/meshs/Menu/Button/quit.png");
-    winner_button = guienv->addButton(irr::core::rect<irr::s32>(500,50,700,400), 0, 0, L"");
+    winner_button = guienv->addButton(irr::core::rect<irr::s32>(500,20,800,180), 0, 0, L"");
     if (winner_texture)
         winner_button->setImage(winner_texture);
     winner_button->setScaleImage(true);
     winner_button->setUseAlphaChannel(true);
     winner_button->setDrawBorder(0);
-    draw = guienv->addButton(irr::core::rect<irr::s32>(600,50,700,400), 0, 0, L"");
+    draw = guienv->addButton(irr::core::rect<irr::s32>(100,50,200,110), 0, 0, L"");
     if (draw_texture)
         draw->setImage(draw_texture);
     draw->setScaleImage(true);
